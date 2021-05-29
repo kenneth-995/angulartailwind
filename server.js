@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/dist/notus-angular'));
 app.get('/*', function(req, res) {
   console.log('__dirname')
   console.log(__dirname)
-  res.sendFile(path.join(__dirname + '/dist/notus-angularindex.html'));
+  res.sendFile(path.join(__dirname + '/dist/notus-angular/index.html'));
 });
 
 // default Heroku port
