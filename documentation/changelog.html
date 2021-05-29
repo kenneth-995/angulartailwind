@@ -1,0 +1,182 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>notus-angular documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	      <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="./" class="navbar-brand">notus-angular documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content getting-started">
+                   <div class="content-data">
+
+<h1 id="change-log">Change Log</h1>
+<h2 id="110-2021-03-19">[1.1.0] 2021-03-19</h2>
+<h3 id="bug-fixing">Bug fixing</h3>
+<ul>
+<li>Rename <code>master</code> branch to <code>main</code></li>
+<li>To make a lot of our changes, we&#39;ve followed the instructions from here (minus the <code>colors</code> and <code>font-sizes</code>): <a href="https://tailwindcss.com/docs/upgrading-to-v2">https://tailwindcss.com/docs/upgrading-to-v2</a><ul>
+<li>For the colors, the only change that we made, is the fact that we&#39;ve added all Tailwind CSS colors to our <code>tailwind.config.js</code> files, and inside our product, all <code>{type}-gray-{number}</code> classes were renamed to <code>{type}-blueGray-{number}</code></li>
+<li>After that, we&#39;ve changed <code>{type}-blueGray-{number}</code> to <code>{type}-blueGray-{lower-number}</code>, i.e. (<code>100</code> became <code>50</code>, <code>200</code> became <code>100</code>, ..., <code>900</code> became <code>800</code>)<ul>
+<li>You can achieve this, by search in your whole project for <code>blueGray-100</code> and replace it with <code>blueGray-50</code></li>
+<li>Then, you search in your whole project for <code>blueGray-200</code> and replace it with <code>blueGray-100</code></li>
+<li>Then, you search in your whole project for <code>blueGray-300</code> and replace it with <code>blueGray-200</code></li>
+<li>Then, you search in your whole project for <code>blueGray-400</code> and replace it with <code>blueGray-300</code></li>
+<li>Then, you search in your whole project for <code>blueGray-500</code> and replace it with <code>blueGray-400</code></li>
+<li>Then, you search in your whole project for <code>blueGray-600</code> and replace it with <code>blueGray-500</code></li>
+<li>Then, you search in your whole project for <code>blueGray-700</code> and replace it with <code>blueGray-600</code></li>
+<li>Then, you search in your whole project for <code>blueGray-800</code> and replace it with <code>blueGray-700</code></li>
+<li>Then, you search in your whole project for <code>blueGray-900</code> and replace it with <code>blueGray-800</code></li>
+</ul>
+</li>
+<li>For the colors, the only change that we made, is the fact that we&#39;ve added all Tailwind CSS colors to our <code>tailwind.config.js</code> files, and inside our product, all <code>{type}-blue-{number}</code> classes were renamed to <code>{type}-lightBlue-{number}</code></li>
+<li>For the colors, the only change that we made, is the fact that we&#39;ve added all Tailwind CSS colors to our <code>tailwind.config.js</code> files, and inside our product, all <code>{type}-green-{number}</code> classes were renamed to <code>{type}-emerald-{number}</code></li>
+</ul>
+</li>
+<li><code>lg:bg-transparent</code> is not working anymore, so we&#39;ve changed it with <code>lg:bg-opacity-0</code></li>
+<li><a href="https://github.com/creativetimofficial/notus-angular/issues/4">https://github.com/creativetimofficial/notus-angular/issues/4</a></li>
+<li><a href="https://github.com/creativetimofficial/notus-js/issues/4">https://github.com/creativetimofficial/notus-js/issues/4</a></li>
+<li><a href="https://github.com/creativetimofficial/notus-js/pull/5">https://github.com/creativetimofficial/notus-js/pull/5</a></li>
+<li><a href="https://github.com/creativetimofficial/notus-js/pull/6">https://github.com/creativetimofficial/notus-js/pull/6</a></li>
+<li><a href="https://github.com/creativetimofficial/notus-nextjs/issues/6">https://github.com/creativetimofficial/notus-nextjs/issues/6</a></li>
+<li><a href="https://github.com/creativetimofficial/notus-nextjs/issues/7">https://github.com/creativetimofficial/notus-nextjs/issues/7</a></li>
+<li><a href="https://github.com/creativetimofficial/notus-nextjs/issues/8">https://github.com/creativetimofficial/notus-nextjs/issues/8</a></li>
+<li><a href="https://github.com/creativetimofficial/notus-react/issues/3">https://github.com/creativetimofficial/notus-react/issues/3</a></li>
+<li><a href="https://github.com/creativetimofficial/notus-svelte/issues/3">https://github.com/creativetimofficial/notus-svelte/issues/3</a></li>
+<li><a href="https://github.com/creativetimofficial/notus-svelte/issues/6">https://github.com/creativetimofficial/notus-svelte/issues/6</a></li>
+<li><a href="https://github.com/creativetimofficial/vue-notus/pull/4/">https://github.com/creativetimofficial/vue-notus/pull/4/</a><h3 id="major-style-changes">Major style changes</h3>
+</li>
+<li>The upgrade of Tailwind CSS from version 1 to version 2, will cause multiple style changes, check them out on the official Tailwind CSS websites:<ul>
+<li><a href="https://blog.tailwindcss.com/tailwindcss-v2">https://blog.tailwindcss.com/tailwindcss-v2</a></li>
+<li><a href="https://tailwindcss.com/">https://tailwindcss.com/</a></li>
+<li><a href="https://tailwindcss.com/docs/upgrading-to-v2">https://tailwindcss.com/docs/upgrading-to-v2</a><h3 id="deleted-components">Deleted components</h3>
+<h3 id="added-components">Added components</h3>
+<h3 id="deleted-dependencies">Deleted dependencies</h3>
+</li>
+</ul>
+</li>
+<li><code>@tailwindcss/custom-forms</code><h3 id="added-dependencies">Added dependencies</h3>
+</li>
+<li><code>@tailwindcss/forms</code> (replaces <code>@tailwindcss/custom-forms</code>)<h3 id="updated-dependencies">Updated dependencies</h3>
+<div><pre class="line-numbers"><code class="language-none">&#64;angular/animations                   10.1.2   →     11.2.5
+&#64;angular/common                       10.1.2   →     11.2.5
+&#64;angular/compiler                     10.1.2   →     11.2.5
+&#64;angular/core                         10.1.2   →     11.2.5
+&#64;angular/forms                        10.1.2   →     11.2.5
+&#64;angular/platform-browser             10.1.2   →     11.2.5
+&#64;angular/platform-browser-dynamic     10.1.2   →     11.2.5
+&#64;angular/router                       10.1.2   →     11.2.5
+&#64;fortawesome/fontawesome-free         5.14.0   →     5.15.3
+&#64;popperjs/core                         2.5.1   →      2.9.1
+chart.js                               2.9.3   →      2.9.4
+rxjs                                   6.6.3   →      6.6.6
+tailwindcss                           1.8.10   →      2.0.4
+tslib                                  2.0.1   →      2.1.0
+zone.js                               0.10.3   →     0.11.4
+&#64;angular-devkit/build-angular       0.1001.2   →   0.1102.4
+&#64;angular/cli                          10.1.2   →     11.2.4
+&#64;angular/compiler-cli                 10.1.2   →     11.2.5
+&#64;angular/language-service             10.1.2   →     11.2.5
+&#64;types/jasmine                        3.5.14   →      3.6.6
+&#64;types/node                          14.11.2   →   14.14.35
+codelyzer                              6.0.0   →      6.0.1
+karma                                  5.2.2   →      6.2.0
+ts-node                                9.0.0   →      9.1.1
+typescript                             4.0.3   →      4.1.5</code></pre></div><h3 id="warning">Warning</h3>
+<em>On a clean install there may be some warnings from request, chokidar, fsevents - they come from node_modules, and they do not affect the product at all.</em></li>
+</ul>
+<h2 id="100-2020-09-29">[1.0.0] 2020-09-29</h2>
+<h3 id="original-release">Original Release</h3>
+<ul>
+<li>Started project from <a href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/presentation?ref=na-changelog">Tailwind Starter Kit by Creative Tim</a></li>
+<li>Added design from Tailwind Starter Kit by Creative Tim</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'getting-started';
+            var COMPODOC_CURRENT_PAGE_URL = 'changelog.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="./js/libs/custom-elements.min.js"></script>
+       <script src="./js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="./js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="./js/menu-wc.js" defer></script>
+
+       <script src="./js/libs/bootstrap-native.js"></script>
+
+       <script src="./js/libs/es6-shim.min.js"></script>
+       <script src="./js/libs/EventDispatcher.js"></script>
+       <script src="./js/libs/promise.min.js"></script>
+       <script src="./js/libs/zepto.min.js"></script>
+
+       <script src="./js/compodoc.js"></script>
+
+       <script src="./js/tabs.js"></script>
+       <script src="./js/menu.js"></script>
+       <script src="./js/libs/clipboard.min.js"></script>
+       <script src="./js/libs/prism.js"></script>
+       <script src="./js/sourceCode.js"></script>
+          <script src="./js/search/search.js"></script>
+          <script src="./js/search/lunr.min.js"></script>
+          <script src="./js/search/search-lunr.js"></script>
+          <script src="./js/search/search_index.js"></script>
+       <script src="./js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
