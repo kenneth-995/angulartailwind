@@ -81,7 +81,7 @@ import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user
     TablesComponent,
     LoginComponent,
     RegisterComponent,
-    IndexComponent,
+    IndexComponent ,
     LandingComponent,
     ProfileComponent,
   ],
